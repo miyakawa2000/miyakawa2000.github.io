@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeafGen | Ryohei Miyakawa</title>
+  <meta name="description" content="LeafGen: Structure-aware Leaf Image Generation for Annotation-free Leaf Instance Segmentation" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <h1 class="site-title">Ryohei Miyakawa</h1>
+      </div>
+      <nav class="nav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#publications">Publications</a>
+        <a href="../index.html#links">Links</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>LeafGen: Structure-aware Leaf Image Generation for Annotation-free Leaf Instance Segmentation</h2>
+        <img src="../img/publications/LeafGen.png" alt="LeafGen thumbnail" class="publication-detail-thumb" />
+        <p><strong>Type:</strong> Journal Paper</p>
+        <p><strong>Publication:</strong> Plant Phenomics, Vol. 7, Issue 4, Dec. 2025</p>
+        <p><strong>DOI:</strong> <a href="https://doi.org/10.1016/j.plaphe.2025.100092">https://doi.org/10.1016/j.plaphe.2025.100092</a></p>
+        <p><strong>Abstract:</strong></p>
+        <p>Instance segmentation of plant leaves plays a crucial role in plant phenotyping, leveraging the rapid advancements in neural network research. A significant challenge in leaf instance segmentation lies in the preparation of
+          training datasets, which typically require manual annotations comprising numerous pairs of ground-truth masks
+          and corresponding plant photographs. Recently, segmentation models pre-trained on large-scale datasets, <i>e.g.</i>,
+          Segment Anything, have enabled training-free (<i>i.e.</i>, zero-shot) instance segmentation accessible to the public.
+          However, applying these models to leaf segmentation often yields unsatisfactory results, as the training datasets
+          for these foundation models may lack sufficient plant imagery to accurately segment leaves exhibiting heavy
+          occlusions and similar textures. To address this issue, we propose a fully automatic method for generating
+          training datasets for leaf instance segmentation, combining an off-the-shelf zero-shot model with structure-aware
+          image generation. Specifically, given a set of plant images and an L-system growth rule representing the
+          structural pattern of the target plant, the proposed method automatically produces an arbitrary number of
+          instance mask and photorealistic plant image pairs, eliminating the need for manual annotation. To maximize
+          usability, we also provide a GUI front-end that integrates the entire pipeline of our method. Experiments on
+          Arabidopsis, Komatsuna, and Rhaphiloepsis plants demonstrate that our method achieves more accurate segmentation compared to state-of-the-art zero-shot models, attaining AP@50 scores of 74.8, 76.0, and 88.2 for leaf
+          instance segmentation of Arabidopsis, Komatsuna, and Rhaphiloepsis, respectively—without any manual
+          annotation.
+        </p>
+        <p><a class="button primary" href="../index.html#publications">Back to Publications</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Ryohei Miyakawa</p>
+    </div>
+  </footer>
+</body>
+</html>

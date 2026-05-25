@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryohei Miyakawa | Home</title>
+  <meta name="description" content="Ryohei Miyakawa's personal website." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <h1 class="site-title">Ryohei Miyakawa</h1>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#links">Links</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Welcome</p>
+          <h2>Ryohei Miyakawa</h2>
+          <p class="hero-description">
+            I'm Ryohei Miyakawa (宮川 稜平), a researcher specializing in Computer Vision and Plant Phenotyping. 
+            I recently work on research and development of softwares using Large Language Models at Panasonic Corporation (<i>i.e.</i>, JTCパワポ職人) .
+          </p>
+          <div class="hero-buttons">
+            <a class="button primary" href="#publications">Show Publications</a>
+            <a class="button" href="#links">Contact</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img src="img/profile.jpg" alt="プロフィール画像" class="profile-image" />
+          <div class="profile-meta">
+            <p><strong>Name:</strong> Ryohei Miyakawa</p>
+            <p><strong>Base:</strong> Shiga, Japan</p>
+            <p><strong>Degree:</strong> Master of Information Science</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h1>About</h1>
+        <p>
+          I researched about computer vision and plant phenotyping at <a href="http://cvl.ist.osaka-u.ac.jp/en/" target="_blank"> Computer Vision Laboratory</a>, Graduate School of Information Science and Technology, The University of Osaka, under the supervision of Assistant Professor Hiroaki Santo, Associate Professor Fumio Okura, and Professor Yasuyuki Matsushita.
+          I received my master's degree in March 2025.
+          From April 2025, I have been working on research and development of softwares using Large Language Models (LLM) at <a href="https://www.panasonic.com/global/about.html" target="_blank">Panasonic Corporation</a> in Osaka, Japan.
+        </p>
+      </div>
+    </section>
+
+    <section id="interests" class="interests">
+      <div class="container">
+        <h2>Interests</h2>
+        <ul>
+          <li>Computer Vision</li>
+          <ul>
+            <li>3D Reconstruction</li>
+            <li>Image Segmentation</li>
+            <li>Object Detection</li>
+          </ul>
+          <li>Plant Phenotyping</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section id="experiences" class="experiences">
+      <div class="container">
+        <h2>Experiences</h2>
+        <p>
+          Apr. 2025-Present: Panasonic Corporation, Osaka, Japan.<br>
+          Apr. 2023-Mar. 2025: Master's student at the Graduate School of Information Science and Technology, The University of Osaka, Japan.<br>
+          Apr. 2019-Mar. 2023: Bachelor's student at the Engineering Department, The University of Osaka, Japan.<br>
+          Apr. 2016-Mar. 2019: Zeze High School, Shiga, Japan.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul>
+          <li>Programming: Python</li>
+          <li>Frameworks/Libraries: PyTorch, NumPy, Pandas, OpenCV, Transformers.</li>
+          <li>Tools: Linux, CUDA, Git, Docker, LaTeX, Jupyter Notebook, Visual Studio Code.</li>
+          <li>Languages: Japanese (Native), English (Business Level, TOEIC L&R 820).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="container">
+        <h1>Publications</h1>
+        <div class="card-grid">
+          <article class="card">
+            <img src="img/publications/ZeroPlantSeg.png" alt="Zero-shot Hierarchical Plant Segmentation thumbnail" class="publication-thumb" />
+            <h3>Zero-shot Hierarchical Plant Segmentation via Foundation Segmentation Models and Text-to-image Attention</h3>
+            <p>WACV 2026</p>
+            <a href="publications/zero-shot-hierarchical-plant-segmentation.html">Show in Detail</a>
+          </article>
+          <article class="card">
+            <img src="img/publications/LeafGen.png" alt="LeafGen thumbnail" class="publication-thumb" />
+            <h3>LeafGen: Structure-aware Leaf Image Generation for Annotation-free Leaf Instance Segmentation</h3>
+            <p>Plant Phenomics 2025</p>
+            <a href="publications/leafgen.html">Show in Detail</a>
+          </article>
+          <article class="card">
+            <img src="img/publications/diff-rendering.png" alt="Differentiable Rendering plant tracking thumbnail" class="publication-thumb" />
+            <h3>微分可能レンダリングを用いた実植物の構造トラッキング</h3>
+            <p>MIRU 2023</p>
+            <a href="publications/differentiable-rendering-plant-3d-tracking.html">Show in Detail</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="links" class="section alt">
+      <div class="container">
+        <h1>Links</h1>
+        <ul class="links-list">
+          <li>Google Scholar: <a href="https://scholar.google.com/citations?user=sWCrNNYAAAAJ&hl=ja&oi=ao" target="_blank" rel="noreferrer">Ryohei Miyakawa</a></li>
+          <li>GitHub: <a href="https://github.com/miyakawa-ryohei" target="_blank" rel="noreferrer">miyakawa-ryohei</a></li>
+          <li>Email (change ☆ to @): miyakawa.ryohei☆jp.panasonic.co.jp</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Ryohei Miyakawa</p>
+    </div>
+  </footer>
+</body>
+</html>
